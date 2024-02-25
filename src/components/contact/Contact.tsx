@@ -1,4 +1,5 @@
-import React from 'react';
+import React,{ RefObject, useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import './Contact.css';
 import {MdOutlineEmail} from 'react-icons/md';
 import {RiMessengerLine} from 'react-icons/ri';
@@ -10,7 +11,7 @@ import emailjs from '@emailjs/browser';
 
 
 const contact = () => {
-  const form = UseRef("");
+  const form = UseRef<HTMLFormElement>(null);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -25,6 +26,11 @@ const contact = () => {
 
       e.target.reset();
   };
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/contact" });
+  }, []);
+  
 
 
   return (
@@ -73,7 +79,7 @@ const contact = () => {
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="name" placeholder="Your Full Name" required/>
           <input type="email" name="email" placeholder="Your Email" required/>
-          <textarea name="message" rows="7" placeholder="Your Message" required></textarea>
+          <textarea name="message" rows={7} placeholder="Your Message" required></textarea>
           <button type="submit" className="btn btn-primary">Send Message</button>
         </form>
       </div>

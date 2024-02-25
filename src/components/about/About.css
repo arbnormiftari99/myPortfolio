@@ -69,6 +69,19 @@
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
 }
+.read-more-link {
+    color: #007bff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .read-more-link.more:hover {
+    color: #0056b3;
+  }
+  
+  .read-more-link.less:hover {
+    color: #0056b3;
+  }
 
 /* ============= MEDIA QUERIES (MEDIUM DEVICES) ============= */
 @media screen and (max-width: 1024px) {

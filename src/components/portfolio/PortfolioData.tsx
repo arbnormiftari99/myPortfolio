@@ -1,9 +1,11 @@
-import Img1 from '../../assets/portfolio1.jpg'
-import Img2 from '../../assets/portfolio2.jpg'
+import Img1 from '../../assets/techblogs.jpeg'
+import Img2 from '../../assets/nodeApi.png'
 import Img3 from '../../assets/portfolio3.jpg'
 import Img4 from '../../assets/portfolio4.jpg'
 import Img5 from '../../assets/portfolio5.png'
 import Img6 from '../../assets/portfolio6.jpg'
+
+
 
 export const PortfolioData = [
     {
@@ -16,36 +18,36 @@ export const PortfolioData = [
     {
         id : 2,
         image: Img2,
-        title:'Name of Your Portfolio',
-        github: 'https://github.com/arbnormiftari99',
+        title:'nodeAPI',
+        github: 'https://github.com/arbnormiftari99/nodeApi',
         demo: 'https://dribbble.com/Alien_pixels'
     },
     {
         id : 3,
         image: Img3,
-        title:'Name of Your Portfolio',
-        github: 'https://github.com/arbnormiftari99',
+        title:'Hero Game',
+        github: 'https://github.com/arbnormiftari99/PixiJsGame',
         demo: 'https://dribbble.com/Alien_pixels'
     },
     {
         id : 4,
         image: Img4,
-        title:'Name of Your Portfolio',
-        github: 'https://github.com/arbnormiftari99',
+        title:'EventLink',
+        github: 'https://github.com/EventLinkOrg/event-link',
         demo: 'https://dribbble.com/Alien_pixels'
     },
     {
         id : 5,
         image: Img5,
-        title:'Name of Your Portfolio',
+        title:'Movie',
         github: 'https://github.com/arbnormiftari99',
         demo: 'https://dribbble.com/Alien_pixels'
     },
     {
         id : 6,
         image: Img6,
-        title:'Name of Your Portfolio',
-        github: 'https://github.com/arbnormiftari99',
+        title:'SwedenSpectra',
+        github: 'https://github.com/arbnormiftari99/SwedenSpectra',
         demo: 'https://dribbble.com/Alien_pixels'
     }
 ]

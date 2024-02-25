@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{ useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import './Navigation.css'
 import {AiOutlineHome, AiOutlineUser} from 'react-icons/ai'
 import {BiBook, BiMessageSquareDetail} from 'react-icons/bi'
@@ -8,6 +9,11 @@ import {BsFiles} from 'react-icons/bs'
 import {useState} from 'react'
 
 const Navigation = () => {
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/navigation" });
+  }, []);
+
 
 const [activeNav, setActiveNav] = useState('#home')
 

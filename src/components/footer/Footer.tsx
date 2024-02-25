@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{ useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import './Footer.css'
 import {FaFacebookF} from 'react-icons/fa'
 // import {FiInstagram} from 'react-icons/fi'
@@ -17,10 +18,13 @@ function getYear() {
 
 
 
-
-
-
 const Footer = () => {
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/footer" });
+  }, []);
+
+  
   return (
     <footer>
       {/* <a href="# " className="footer__logo">YOUR LOGO</a> */}

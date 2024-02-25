@@ -15,7 +15,7 @@ const Header = () => {
           Arbnor Miftari
         </h1>
         <h5 className="text-light">
-          Web Developer
+          Software Engineer
         </h5>
         <CTA />
         <HeaderSosial />

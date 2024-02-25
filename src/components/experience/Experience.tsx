@@ -1,9 +1,17 @@
-import React from 'react'
+import React,{ useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import './Experience.css'
 import {BsPatchCheckFill} from 'react-icons/bs'
 
 
 const Experience = () => {
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/experience" });
+  }, []);
+
+
+
   return (
     <section id="experience">
       <h5>
@@ -69,7 +77,7 @@ const Experience = () => {
                 <h4>
                  Vue
                 </h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
@@ -78,7 +86,7 @@ const Experience = () => {
                 <h4>
                  React
                 </h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
           </div>
@@ -96,7 +104,7 @@ const Experience = () => {
                 <h4>
                  NODE JS
                 </h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
@@ -114,7 +122,7 @@ const Experience = () => {
                 <h4>
                  MongoDB
                 </h4>
-                <small className="text-light">Intermediate</small>
+                <small className="text-light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">

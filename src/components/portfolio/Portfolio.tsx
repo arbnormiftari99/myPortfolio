@@ -1,10 +1,16 @@
-import React from 'react'
+import React,{ useEffect } from 'react';
+import ReactGA from 'react-ga4';
 import './Portfolio.css'
 import {PortfolioData} from './PortfolioData'
 
 
 
 const Portfolio = () => {
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: "/portfolio" });
+  }, []);
+
   return (
     <section id="portfolio">
       <h5>
