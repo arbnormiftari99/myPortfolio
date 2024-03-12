@@ -1,9 +1,9 @@
-import Img1 from '../../assets/techblogs.jpeg'
+import Img1 from '../../assets/tech1.png'
 import Img2 from '../../assets/nodeApi.png'
 import Img3 from '../../assets/portfolio3.jpg'
 import Img4 from '../../assets/portfolio4.jpg'
 import Img5 from '../../assets/portfolio5.png'
-import Img6 from '../../assets/portfolio6.jpg'
+import Img6 from '../../assets/spectra9.png'
 
 
 

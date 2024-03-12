@@ -70,9 +70,9 @@ const contact = () => {
              WhatsApp
             </h4>
             <h5>
-              +37745282642
+              +46723652297
             </h5>
-            <a href="https://wa.me/+37745282642" target="_blank" rel="noreferrer">Send a message</a>
+            <a href="https://wa.me/+46723652297" target="_blank" rel="noreferrer">Send a message</a>
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
